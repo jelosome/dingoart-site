@@ -11,16 +11,16 @@
         <h1>DINGOART</h1>
         <p>ФОТО на холсте</p>
     </header>
+
     <main>
-        <div class="image-container">
-            <img id="canvas-image" src="your-image.jpg" alt="Пример фото">
-        </div>
+        <input type="file" id="upload" accept="image/*">
+        <canvas id="canvas"></canvas>
         <div class="controls">
-            <button id="increase-brightness">Увеличить яркость</button>
-            <button id="zoom-in">+</button>
-            <button id="zoom-out">-</button>
+            <button id="increaseBrightness">+</button>
+            <button id="decreaseBrightness">-</button>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
