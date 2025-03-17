@@ -1,20 +1,27 @@
-const image = document.getElementById("canvas-image");
-let brightness = 100;
-let scale = 1;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
-document.getElementById("increase-brightness").addEventListener("click", () => {
-    brightness += 10;
-    image.style.filter = `brightness(${brightness}%)`;
-});
+header {
+    margin: 20px;
+}
 
-document.getElementById("zoom-in").addEventListener("click", () => {
-    scale += 0.1;
-    image.style.transform = `scale(${scale})`;
-});
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid #ddd;
+}
 
-document.getElementById("zoom-out").addEventListener("click", () => {
-    if (scale > 0.5) {
-        scale -= 0.1;
-        image.style.transform = `scale(${scale})`;
-    }
-});
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
